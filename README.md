@@ -1,2 +1,3 @@
 # tatft
-Test All The Fucking Time or tatft for short
+
+Repo reference for well-tested applications in Go.
