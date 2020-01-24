@@ -19,6 +19,13 @@ func TestAdd(t *testing.T) {
 	t.Run("return 0 with no params", func(t *testing.T) {
 		if got := Add(); got != 0 {
 			t.Errorf("got %q want 0", got)
+
+			// or
+			// The rest of tests sholud no longer be run.
+			// t.Log("...")
+			// t.FailNow()
+			// or
+			// t.Fatal("...")
 		}
 	})
 
