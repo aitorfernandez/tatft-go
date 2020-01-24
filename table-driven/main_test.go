@@ -3,11 +3,12 @@ package main
 import "testing"
 
 var values = []struct {
-	in  []int
-	out int
+	scenario string
+	in       []int
+	out      int
 }{
-	{[]int{1, 2}, 3},
-	{[]int{1, 2, 3, 4}, 10},
+	{"Scenario 1 want 3", []int{1, 2}, 3},
+	{"Scenario 2 want 10", []int{1, 2, 3, 4}, 10},
 }
 
 func TestAdd(t *testing.T) {
@@ -15,7 +16,7 @@ func TestAdd(t *testing.T) {
 		got := Add(v.in...)
 
 		if got != v.out {
-			t.Errorf("got %v want %v", got, v.out)
+			t.Errorf("Failed %v, got %v want %v", v.scenario, got, v.out)
 		}
 	}
 }
