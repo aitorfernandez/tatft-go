@@ -14,6 +14,6 @@ func TestAdd(t *testing.T) {
 	time.Sleep(5 * time.Second)
 
 	if got != want {
-		t.Errorf("got %q want %q", got, want)
+		t.Errorf("got %v want %v", got, want)
 	}
 }
