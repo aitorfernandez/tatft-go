@@ -1,3 +1,3 @@
 # tatft
 
-Repo reference for all my well-tested applications in Go :)
+Repo reference for testing applications in Go :)
